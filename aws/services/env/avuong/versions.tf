@@ -5,9 +5,9 @@ terraform {
     aws = ">= 2.68, < 4.0"
   }
 
-	backend "local" {
-		config = {
-			path = avuong.tfstate
-		}
+  backend "local" {
+    config = {
+      path = avuong.tfstate
+    }
   }
 }

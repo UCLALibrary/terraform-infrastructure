@@ -5,11 +5,11 @@ terraform {
     aws = ">= 2.68, < 4.0"
   }
 
-	backend "s3" {
-		encrypt = true
-		bucket = "prod-services-terraform-state"
-		region = "us-west-2"
-		key = "test_environment/vpc-state"
-		dynamodb_table = "prod-services-terraform-state-lock"
-	}
+  backend "s3" {
+    encrypt = true
+    bucket = "prod-services-terraform-state"
+    region = "us-west-2"
+    key = "test_environment/vpc-state"
+    dynamodb_table = "prod-services-terraform-state-lock"
+  }
 }
